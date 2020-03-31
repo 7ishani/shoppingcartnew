@@ -24,6 +24,8 @@ import { CartItemComponent } from './components/shopping-cart/cart/cart-item/car
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
 
 import { HomeComponent } from './components/home/home.component';
+import { ProductListhomeComponent } from 'src/app/components/shopping-cart/product-listhome/product-listhome.component';
+import { ProductItemhomeComponent } from './components/shopping-cart/product-listhome/product-itemhome/product-itemhome.component';
 
 import { SignupComponent } from './components/signup/signup.component';
 
@@ -43,7 +45,9 @@ import { SignupComponent } from './components/signup/signup.component';
 
     LoginComponent,
     RegistrationComponent,
-    HomeComponent
+    HomeComponent,
+    ProductListhomeComponent,
+    ProductItemhomeComponent
     
 
 
