@@ -1,3 +1,6 @@
+<p *ngIf="user">{{ user?.displayName }}
+  <button class="btn btn-danger" *ngIf="user" (click)="logout()">Logout</button></p>
+
 <div class="row">
     
   
@@ -9,4 +12,3 @@
       <app-cart></app-cart>
     </div>
   </div>
-  

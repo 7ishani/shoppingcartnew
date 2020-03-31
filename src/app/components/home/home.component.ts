@@ -4,11 +4,11 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class NavComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   user: firebase.User;
 
@@ -22,11 +22,15 @@ export class NavComponent implements OnInit {
       })
   }
 
+  login() {
+    this.router.navigate(['/login']);
+  }
+
   logout() {
     this.auth.logout();
   }
 
-  goToPage(pageName:string):void{
-    this.router.navigate([`${pageName}`]);
-}
+  register() {
+    this.router.navigate(['/register']);
+  }
 }
