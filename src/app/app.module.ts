@@ -23,6 +23,8 @@ import { CartComponent } from './components/shopping-cart/cart/cart.component';
 import { CartItemComponent } from './components/shopping-cart/cart/cart-item/cart-item.component';
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
 import { HomeComponent } from './components/home/home.component';
+import { ProductListhomeComponent } from 'src/app/components/shopping-cart/product-listhome/product-listhome.component';
+import { ProductItemhomeComponent } from './components/shopping-cart/product-listhome/product-itemhome/product-itemhome.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { HomeComponent } from './components/home/home.component';
     ProductItemComponent,
     LoginComponent,
     RegistrationComponent,
-    HomeComponent
+    HomeComponent,
+    ProductListhomeComponent,
+    ProductItemhomeComponent
     
   ],
   imports: [

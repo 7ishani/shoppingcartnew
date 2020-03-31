@@ -1,35 +1,15 @@
-<p *ngIf="user">{{ user?.displayName }}
-<button class="btn btn-danger" *ngIf="user" (click)="logout()">Logout</button></p>
 
-<div class="container1">  
-    <h2>Do yo want to view the collection ? </h2>
-   
-  
-        <button class="btn btn-danger mr-2" *ngIf="!user" (click)="register()" style="margin-left: 450px; border-radius: 5px;">Register</button>
-        
-        <button class="btn btn-primary" *ngIf="!user" (click)="login()" style="margin-left: 50px; border-radius: 5px;">Login</button>
+    <h2>Do you want to add to cart ? </h2>
+        <button class="btn btn-danger mr-2" *ngIf="!user" (click)="register()" style="margin-left: 450px; border-radius: 5px; margin-bottom: 30px;">Register</button>       
+        <button class="btn btn-primary" *ngIf="!user" (click)="login()" style="margin-left: 50px; border-radius: 5px; margin-bottom: 30px;">Login</button>
 
     
-
-    <div class="col-md-3 col-sm-6">
-        <table class="center">
-            <tr>
-                <td>
-                    <h1>Shopping cart</h1>
-                    <br>
-                    <h3>Stay home and shop online</h3>
-                    <br>
-                    <h4>You are too pretty to have a look for a sparking spot</h4>
-                </td>
-                <td>
-                    <div class="product-grid">
-                        <div class="product-image">             
-                            <img class="pic-1" src="assets/images/shopping.png">                          
-                        </div>           
-                    </div>
-                </td>
-            </tr>
-        </table>
-        
-    </div>  
-</div>
+<div class="row">
+    
+  
+    <div class="col-md-10">
+      <app-product-listhome></app-product-listhome>
+    </div>
+  
+    
+  </div>
