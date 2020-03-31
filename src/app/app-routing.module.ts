@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { LoginComponent } from 'src/app/components/auth/login/login.component';
 import { RegistrationComponent } from 'src/app/components/auth/registration/registration.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
@@ -32,6 +33,9 @@ const routes: Routes = [
 
 
 
+
+
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
@@ -39,3 +43,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 export const routingComponents= [];
+

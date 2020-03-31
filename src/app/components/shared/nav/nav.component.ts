@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { AuthService } from 'src/app/services/auth.service';
 import { Router } from '@angular/router';
 
@@ -10,10 +11,12 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
+
   user: firebase.User;
 
   constructor(private auth: AuthService, 
     private router: Router) { }
+
 
   ngOnInit() {
     this.auth.getUserState()
@@ -22,9 +25,12 @@ export class NavComponent implements OnInit {
       })
   }
 
+
   logout() {
     this.auth.logout();
   }
+
+
 
   goToPage(pageName:string):void{
     this.router.navigate([`${pageName}`]);
